@@ -15,6 +15,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background: #f8fafc;
@@ -248,6 +252,40 @@
             margin-bottom: 8px;
         }
 
+        /* Contato */
+        .contato-card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
+        }
+
+        .contato-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .contato-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #0f2b1d;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .contato-btn:hover {
+            background: #1a4a32;
+        }
+
         /* Footer */
         .footer {
             background: #0f172a;
@@ -338,8 +376,8 @@
         </div>
     </section>
 
-    <!-- Sobre -->
-    <section class="section">
+    <!-- Sobre (seção com âncora) -->
+    <section id="sobre" class="section">
         <div class="container">
             <h2 class="section-title">Sobre a Plano Renascer</h2>
             <div class="cards-grid">
@@ -362,8 +400,8 @@
         </div>
     </section>
 
-    <!-- Planos -->
-    <section class="section" style="background: #f8fafc;">
+    <!-- Planos (seção com âncora) -->
+    <section id="planos" class="section" style="background: #f8fafc;">
         <div class="container">
             <h2 class="section-title">Nossos Planos</h2>
             <p class="section-subtitle">Escolha o plano que melhor atende sua família</p>
@@ -406,7 +444,7 @@
     </section>
 
     <!-- Informações da Empresa (para validação da Meta) -->
-    <section class="section">
+    <section id="empresa" class="section">
         <div class="container">
             <h2 class="section-title">Dados da Empresa</h2>
             <div class="info-card">
@@ -435,6 +473,21 @@
                         <strong>🕊️ CNAE</strong>
                         <p>Atividades de assistência a pessoas</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato (seção com âncora) -->
+    <section id="contato" class="section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contato-card">
+                <p style="font-size: 18px; margin-bottom: 16px;">Estamos à disposição para atender você e sua família.</p>
+                <div class="contato-buttons">
+                    <a href="tel:+5524992095601" class="contato-btn">📞 Ligar Agora</a>
+                    <a href="https://wa.me/5524992095601" target="_blank" class="contato-btn">💬 WhatsApp</a>
+                    <a href="mailto:dsr24horas@gmail.com" class="contato-btn">✉️ Enviar E-mail</a>
                 </div>
             </div>
         </div>
